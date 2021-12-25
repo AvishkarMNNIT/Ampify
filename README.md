@@ -1,4 +1,22 @@
-# Ampify
+# Ampify UI
+
+Login/SignUp page:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233554.png?raw=true)
+
+Home Page:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233632.png?raw=true)
+
+All Songs:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233653.png?raw=true)
+
+Ampify Playing media:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233810.png?raw=true)
+
+**#Ampify Features**
 
 In the project we have made our own server side with following features -
 1. A user can login / register.
@@ -26,21 +44,6 @@ In the project we have made our own server side with following features -
 
 Languages used - JAVA, MySQL.
 
-Login/SignUp page:
-
-![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233554.png?raw=true)
-
-Home Page:
-
-![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233632.png?raw=true)
-
-All Songs:
-
-![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233653.png?raw=true)
-
-Ampify Playing media:
-
-![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233810.png?raw=true)
 
 
 
