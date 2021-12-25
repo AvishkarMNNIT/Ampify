@@ -25,3 +25,22 @@ In the project we have made our own server side with following features -
 11. Allow all the functionalities while music plays in the application.
 
 Languages used - JAVA, MySQL.
+
+Login/SignUp page:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233554.png?raw=true)
+
+Home Page:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233632.png?raw=true)
+
+All Songs:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233653.png?raw=true)
+
+Ampify Playing media:
+
+![alt text](https://github.com/AvishkarMNNIT/Ampify/blob/main/Screenshot%202020-11-01%20233810.png?raw=true)
+
+
+
