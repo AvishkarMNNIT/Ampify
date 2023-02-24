@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77a56b9d-e878-48e2-8f6d-837c45a1a109" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_32.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/description.html" beforeDir="false" />
@@ -33,82 +29,7 @@
       <change beforePath="$PROJECT_DIR$/../Screenshot 2020-11-01 233653.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Screenshot 2020-11-01 233810.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Screenshot 2020-11-01 233911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_101.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_211.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ampify Music.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/AppData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/HomePage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/Allsongs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/MusicBack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/My Post.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/Mypost5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/Mypost6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/addIcons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/appIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/delete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/heartSelected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_adjust_50px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_audio_24px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_customer_20px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_delete_20px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_end_25px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_horizontal_line_20px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_lock_20px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_mute_24px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_opened_folder_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_repeat_25px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_search_50px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_shuffle_25px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/icons8_skip_to_start_25px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/import.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/lyrics.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/mypost1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/mypost2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/mypost3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/mypost7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/mypost8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/pauseIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/playIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/playall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/queue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/repeat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/repeatGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/shuffle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/shuffleGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/signout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/stopIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Icons/top50.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/SignUpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Signup.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/SongData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TableView.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Database_Connection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/HomeHandle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/sample/AppData.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/sample/HomeController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/sample/HomePage.fxml" beforeDir="false" />
@@ -196,27 +117,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ampify.Main" />
@@ -272,6 +193,10 @@
       <workItem from="1675829802761" duration="1830000" />
       <workItem from="1675869307588" duration="1503000" />
       <workItem from="1676034837793" duration="4757000" />
+      <workItem from="1676204371814" duration="597000" />
+      <workItem from="1676292885311" duration="598000" />
+      <workItem from="1676314182254" duration="595000" />
+      <workItem from="1676378092080" duration="596000" />
     </task>
     <servers />
   </component>

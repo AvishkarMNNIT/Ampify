@@ -1,2 +1,6 @@
 # Project exclude paths
+/src/main/.DS_Store
+/.idea/.DS_Store
+/.DS_Store
+/src/.DS_Store
 /out/
