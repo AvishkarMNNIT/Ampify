@@ -4,8 +4,6 @@
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXMasonryPane?>
 <?import com.jfoenix.controls.JFXSlider?>
-<?import com.jfoenix.controls.JFXTextArea?>
-<?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
@@ -15,6 +13,8 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,7 +23,7 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="defaultPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ampify.HomeController">
+<AnchorPane fx:id="defaultPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ampify.HomeController">
     <children>
         <HBox fx:id="equaliserHBox" layoutX="64.0" prefHeight="243.0" prefWidth="461.0" AnchorPane.bottomAnchor="83.0" AnchorPane.rightAnchor="10.0">
             <children>
@@ -236,7 +236,7 @@
                                                 </ImageView>
                                             </graphic>
                                         </Label>
-                                        <JFXTextArea fx:id="localSearchField" focusColor="#3c3c3c" onMouseClicked="#localSearchFunction" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;" unFocusColor="#3c3c3c">
+                                        <TextField fx:id="localSearchField" onMouseClicked="#localSearchFunction" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;  ">
                                             <HBox.margin>
                                                 <Insets right="30.0" top="20.0" />
                                             </HBox.margin>
@@ -246,7 +246,7 @@
                                             <font>
                                                 <Font name="System Bold" size="15.0" />
                                             </font>
-                                        </JFXTextArea>
+                                        </TextField>
                                     </children>
                                 </HBox>
                                 <Separator opacity="0.1" prefWidth="200.0" />
@@ -352,22 +352,22 @@
                 </AnchorPane>
                 <AnchorPane fx:id="lyricsPane" layoutY="560.0" prefHeight="46.0" prefWidth="1110.0" style="-fx-background-color: #1b1b1c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                     <children>
-                        <JFXTextArea fx:id="lyricsTextArea" editable="false" focusColor="#242424" layoutX="285.0" prefHeight="50.0" prefWidth="649.0" style="-fx-text-fill: white;" unFocusColor="#242424" AnchorPane.rightAnchor="221.0">
+                        <TextField fx:id="lyricsTextArea" editable="false" layoutX="285.0" prefHeight="50.0" prefWidth="649.0" style="-fx-text-fill: white; -fx-background-color: transparent" AnchorPane.rightAnchor="221.0">
                             <font>
                                 <Font size="18.0" />
                             </font>
-                        </JFXTextArea>
+                        </TextField>
                     </children>
                 </AnchorPane>
                 <HBox fx:id="createPlaylistHbox" alignment="CENTER" layoutX="-1.0" layoutY="-2.0" prefHeight="640.0" prefWidth="1110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
                         <AnchorPane fx:id="createPlaylistPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="379.0" style="-fx-background-color: #424242; -fx-background-radius: 15;">
                             <children>
-                                <JFXTextArea fx:id="createPlaylistTextField" focusColor="#1db954" layoutX="18.0" layoutY="110.0" prefHeight="46.0" prefWidth="339.0" promptText="Enter playlist name" style="-fx-text-fill: #dddddd; -fx-prompt-text-fill: #a4a4a4;" unFocusColor="BLACK">
+                                <TextField fx:id="createPlaylistTextField" layoutX="18.0" layoutY="110.0" prefHeight="46.0" prefWidth="339.0" promptText="Enter playlist name" styleClass="jfx-text-field">
                                     <font>
                                         <Font name="Calibri" size="18.0" />
                                     </font>
-                                </JFXTextArea>
+                                </TextField>
                                 <Label alignment="CENTER" layoutX="-2.0" layoutY="31.0" prefHeight="26.0" prefWidth="379.0" text="Create Playlist" textFill="#dddddd">
                                     <font>
                                         <Font name="Calibri Bold" size="22.0" />
@@ -441,7 +441,7 @@
                                                 </ImageView>
                                             </graphic>
                                         </Label>
-                                        <JFXTextArea fx:id="searchField" focusColor="#3c3c3c" onMouseClicked="#searchFunction" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;" unFocusColor="#3c3c3c">
+                                        <TextField fx:id="searchField" onMouseClicked="#searchFunction" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;">
                                             <HBox.margin>
                                                 <Insets right="30.0" top="20.0" />
                                             </HBox.margin>
@@ -451,7 +451,7 @@
                                             <font>
                                                 <Font name="System Bold" size="15.0" />
                                             </font>
-                                        </JFXTextArea>
+                                        </TextField>
                                     </children>
                                 </HBox>
                                 <Separator opacity="0.1" prefWidth="200.0" />
@@ -524,7 +524,7 @@
                                                 </ImageView>
                                             </graphic>
                                         </Label>
-                                        <JFXTextArea fx:id="searchField1" focusColor="#3c3c3c" onMouseClicked="#searchFunction1" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;" unFocusColor="#3c3c3c">
+                                        <TextField fx:id="searchField1" onMouseClicked="#searchFunction1" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;">
                                             <HBox.margin>
                                                 <Insets right="30.0" top="20.0" />
                                             </HBox.margin>
@@ -534,7 +534,7 @@
                                             <font>
                                                 <Font name="System Bold" size="15.0" />
                                             </font>
-                                        </JFXTextArea>
+                                        </TextField>
                                     </children>
                                 </HBox>
                                 <Separator opacity="0.1" prefWidth="200.0" />
@@ -620,7 +620,7 @@
                                                 </ImageView>
                                             </graphic>
                                         </Label>
-                                        <JFXTextArea fx:id="tableSearchField" focusColor="#3c3c3c" onMouseClicked="#tableSearchFunction" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;" unFocusColor="#3c3c3c">
+                                        <TextField fx:id="tableSearchField" onMouseClicked="#tableSearchFunction" prefHeight="30.0" prefWidth="206.0" promptText="Search" style="-fx-background-color: white; -fx-background-radius: 30;">
                                             <HBox.margin>
                                                 <Insets right="30.0" top="20.0" />
                                             </HBox.margin>
@@ -630,7 +630,7 @@
                                             <font>
                                                 <Font name="System Bold" size="15.0" />
                                             </font>
-                                        </JFXTextArea>
+                                        </TextField>
                                     </children>
                                 </HBox>
                                 <Separator opacity="0.1" prefWidth="200.0" />
@@ -761,7 +761,7 @@
             </children></AnchorPane>
         <AnchorPane fx:id="playerControl" layoutY="646.0" maxHeight="165.0" maxWidth="1920.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="1280.0" style="-fx-background-color: #242424;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <children>
-                <JFXTextArea fx:id="currentTimeLabel" editable="false" focusColor="#4d4d4d" labelFloat="true" layoutX="279.0" layoutY="50.0" prefHeight="10.0" prefWidth="69.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="279.0" AnchorPane.topAnchor="50.0" />
+                <TextField fx:id="currentTimeLabel" editable="false" layoutX="279.0" layoutY="50.0" prefHeight="10.0" prefWidth="69.0" style="-fx-text-fill: white; -fx-background-color: transparent" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="279.0" AnchorPane.topAnchor="50.0" />
                 <JFXSlider fx:id="progressBar" layoutX="317.0" layoutY="75.0" majorTickUnit="1.0" minorTickCount="0" prefHeight="18.0" prefWidth="646.0" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="55.0" />
                 <HBox alignment="CENTER" layoutX="476.0" layoutY="-4.0" prefHeight="32.0" prefWidth="336.0" spacing="20.0" AnchorPane.leftAnchor="476.0" AnchorPane.rightAnchor="468.0">
                     <children>
@@ -840,7 +840,7 @@
                         <Insets top="5.0" />
                     </padding>
                 </HBox>
-                <JFXTextArea fx:id="trackLength" focusColor="#4d4d4d" labelFloat="true" layoutX="991.0" layoutY="52.0" prefHeight="10.0" prefWidth="69.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="239.0" AnchorPane.topAnchor="52.0" />
+                <TextField fx:id="trackLength" editable="false" layoutX="991.0" layoutY="52.0" prefHeight="10.0" prefWidth="69.0" style="-fx-text-fill: white; -fx-background-color: transparent" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="239.0" AnchorPane.topAnchor="52.0" />
                 <JFXButton fx:id="stopButton" layoutX="959.9999999999999" layoutY="14.0" onMouseClicked="#stop" prefHeight="18.0" prefWidth="25.0" text=" " AnchorPane.rightAnchor="286.0000000000001" AnchorPane.topAnchor="14.0">
                     <graphic>
                         <ImageView fitHeight="15.0" fitWidth="15.0">
@@ -885,7 +885,7 @@
                         </ImageView>
                     </graphic></JFXButton>
                 <JFXSlider fx:id="volumeSlider" layoutX="1132.0" layoutY="35.0" prefHeight="18.0" prefWidth="141.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="18.0" />
-                <JFXTextArea fx:id="nowPlayingLabel" editable="false" layoutX="8.0" layoutY="20.0" prefHeight="60.0" prefWidth="217.0" style="-fx-text-fill: white;" />
+                <Label fx:id="nowPlayingLabel" layoutX="8.0" layoutY="20.0" prefHeight="60.0" prefWidth="217.0" style="-fx-text-fill: white" wrapText="true" />
             </children>
         </AnchorPane>
     </children>

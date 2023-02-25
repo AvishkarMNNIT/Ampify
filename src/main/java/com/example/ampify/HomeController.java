@@ -95,7 +95,7 @@ public class HomeController implements Initializable {
     @FXML
     private Label songNameLabel;
     @FXML
-    private JFXTextArea searchField, searchField1, tableSearchField;
+    private TextField searchField, searchField1, tableSearchField;
     @FXML
     private AnchorPane songPane;
     @FXML
@@ -105,7 +105,7 @@ public class HomeController implements Initializable {
     @FXML
     private JFXListView<String> libraryListView;
     @FXML
-    private JFXTextArea lyricsTextArea;
+    private TextField lyricsTextArea;
     @FXML
     private AnchorPane libraryPane;
     @FXML
@@ -133,13 +133,13 @@ public class HomeController implements Initializable {
     @FXML
     private JFXSlider volumeSlider;
     @FXML
-    private JFXTextArea localSearchField;
+    private TextField localSearchField;
     @FXML
     private JFXListView<String> queueListView;
     @FXML
-    private JFXTextArea currentTimeLabel;
+    private TextField currentTimeLabel;
     @FXML
-    private JFXTextArea trackLength;
+    private TextField trackLength;
     @FXML
     private ImageView volumeImage;
     @FXML
@@ -151,7 +151,7 @@ public class HomeController implements Initializable {
     @FXML
     private ContextMenu libraryContextMenu;
     @FXML
-    private JFXTextArea nowPlayingLabel;
+    private Label nowPlayingLabel;
     @FXML
     private JFXButton playButton;
     @FXML
@@ -163,7 +163,7 @@ public class HomeController implements Initializable {
     @FXML
     private JFXButton createPlaylistcloseButton;
     @FXML
-    private JFXTextArea createPlaylistTextField;
+    private TextField createPlaylistTextField;
     @FXML
     private JFXButton createPlaylistButton;
     @FXML
@@ -305,7 +305,8 @@ public class HomeController implements Initializable {
             mediaPlayer.pause();
             status = false;
             try {
-                playImage.setImage(new Image(new FileInputStream("src/sample/Icons/playIcon.png")));
+                URL imageUrl = getClass().getResource("icons/playIcon.png");
+                playImage.setImage(new Image(imageUrl.toString()));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -314,7 +315,8 @@ public class HomeController implements Initializable {
             System.out.println("playing song in play pause method");
             status = true;
             try {
-                playImage.setImage(new Image(new FileInputStream("src/sample/Icons/pauseIcon.png")));
+                URL imageUrl = getClass().getResource("icons/pauseIcon.png");
+                playImage.setImage(new Image(imageUrl.toString()));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -597,7 +599,8 @@ public class HomeController implements Initializable {
         endTime.clear();
         status = false;
         try {
-            playImage.setImage(new Image(new FileInputStream("src/sample/Icons/playIcon.png")));
+            URL imageUrl = getClass().getResource("icons/playIcon.png");
+            playImage.setImage(new Image(imageUrl.toString()));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -618,6 +621,7 @@ public class HomeController implements Initializable {
         String str2 = (int) secs + "";
         if (secs < 10)
             str2 = 0 + str2;
+
         return str1 + ":" + str2;
     }
 
@@ -663,7 +667,8 @@ public class HomeController implements Initializable {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println("no local song found");
         }
 
     }
@@ -711,7 +716,7 @@ public class HomeController implements Initializable {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("no local video found");
         }
 
 
@@ -749,12 +754,14 @@ public class HomeController implements Initializable {
         String fileName, path, fileExtension;
         path = f.toURI().toString();
         Media media = new Media(path);
-        mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.play();
+        System.out.println(media.getWidth());
+
+
         likeButton.setVisible(false);
         likeButton.setDisable(true);
         try {
-            playImage.setImage(new Image(new FileInputStream("src/sample/Icons/pauseIcon.png")));
+            URL imageUrl = getClass().getResource("icons/pauseIcon.png");
+            playImage.setImage(new Image(imageUrl.toString()));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -782,7 +789,8 @@ public class HomeController implements Initializable {
     public void jumpTrack(int index, List<File> listOfFiles) {
         File file = null;
         System.out.println(index);
-        if (status) {
+
+        if (mediaPlayer != null && mediaPlayer.getStatus() == MediaPlayer.Status.PLAYING) {
             stop();
         }
         try {
@@ -797,6 +805,7 @@ public class HomeController implements Initializable {
     }   //jumpTrack() method closed here
 
     void setPlayer(Media media) {
+        mediaPlayer = new MediaPlayer(media);
         volumeSlider.setValue(mediaPlayer.getVolume() * 100);
         volumeSlider.valueProperty().addListener(new InvalidationListener() {
             @Override
@@ -808,6 +817,7 @@ public class HomeController implements Initializable {
         mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> {
                     progressBar.setValue(newValue.toSeconds());
                     currentTimeLabel.setText("" + getSecondsToSimpleString(newValue.toSeconds()));
+                    trackLength.setText(String.valueOf(mediaPlayer.getTotalDuration().toSeconds()));
                 }
         );
 
@@ -825,19 +835,25 @@ public class HomeController implements Initializable {
             }
         });
 
-        mediaPlayer.setOnReady(new Runnable() {
-            @Override
-            public void run() {
-                Duration total = media.getDuration();
-                trackLength.setText(getSecondsToSimpleString(total.toSeconds()));
-                progressBar.setMax(total.toSeconds());
-            }
-        });
-
         mediaPlayer.setOnEndOfMedia(new Runnable() {
             @Override
             public void run() {
                 nextButtonPressed();
+            }
+        });
+        mediaPlayer.setOnReady(new Runnable() {
+            @Override
+            public void run() {
+
+                System.out.println("Duration: " + mediaPlayer.getTotalDuration().toSeconds());
+                System.out.println("Duration: " + mediaPlayer.getMedia().getDuration().toSeconds());
+                for (Map.Entry<String, Object> entry : media.getMetadata().entrySet()) {
+                    System.out.println(entry.getKey() + ": " + entry.getValue());
+
+                }
+
+//                trackLength.setText(String.valueOf(mediaPlayer.getMedia().getDuration().toSeconds()));
+                mediaPlayer.play();
             }
         });
     }//setPlayer method ends here
@@ -852,13 +868,15 @@ public class HomeController implements Initializable {
         likeButton.setDisable(false);
         if (likedSongs.contains(songName)) {
             try {
-                likeButtonImage.setImage(new Image(new FileInputStream("src/sample/Icons/heartSelected.png")));
+                URL imageUrl = getClass().getResource("icons/heartSelected.png");
+                likeButtonImage.setImage(new Image(imageUrl.toString()));
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } else {
             try {
-                likeButtonImage.setImage(new Image(new FileInputStream("src/sample/Icons/heart.png")));
+                URL imageUrl = getClass().getResource("icons/heart.png");
+                likeButtonImage.setImage(new Image(imageUrl.toString()));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -1518,7 +1536,8 @@ public class HomeController implements Initializable {
         if (likedSongs.contains(currentSong)) {
             System.out.println("Unliked" + currentSong);
             try {
-                likeButtonImage.setImage(new Image(new FileInputStream("src/sample/Icons/heart.png")));
+                URL imageUrl = getClass().getResource("icons/heart.png");
+                likeButtonImage.setImage(new Image(imageUrl.toString()));
                 AppData removeFromLikedSongs = new AppData("removeFromLikedSongs", currentSong);
                 Main.clientOutputStream.writeObject(removeFromLikedSongs);
             } catch (Exception e) {
@@ -1527,7 +1546,8 @@ public class HomeController implements Initializable {
         } else {
             System.out.println("liked" + currentSong);
             try {
-                likeButtonImage.setImage(new Image(new FileInputStream("src/sample/Icons/heartSelected.png")));
+                URL imageUrl = getClass().getResource("icons/heartSelected.png");
+                likeButtonImage.setImage(new Image(imageUrl.toString()));
                 AppData addToLikedSongs = new AppData("addToLikedSongs", currentSong);
                 Main.clientOutputStream.writeObject(addToLikedSongs);
             } catch (Exception e) {

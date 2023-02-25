@@ -1,7 +1,7 @@
 package com.example.ampify;
 
 import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextArea;
+import javafx.scene.control.TextField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.scene.control.Label;
 import javafx.event.ActionEvent;
@@ -25,9 +25,9 @@ public class LoginController implements Initializable
     @FXML
     private AnchorPane rootPane;
     @FXML
-    private JFXTextArea password;
+    private TextField password;
     @FXML
-    private JFXTextArea username;
+    private TextField username;
 
     static String currentUser = null;
 

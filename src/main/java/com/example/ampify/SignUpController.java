@@ -3,6 +3,7 @@ package com.example.ampify;
 
 import com.jfoenix.controls.JFXTextArea;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.scene.control.Label;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -21,9 +23,9 @@ public class SignUpController implements Initializable {
     @FXML
     private AnchorPane rootPane;
     @FXML
-    private JFXTextArea password, cPassword;
+    private TextField password, cPassword;
     @FXML
-    private JFXTextArea username, FirstName, LastName, Email;
+    private TextField username, FirstName, LastName, Email;
     @FXML
     private Label warningLabel;
 
@@ -76,7 +78,7 @@ public class SignUpController implements Initializable {
 
     @FXML
     void MoveToSLogin(ActionEvent event) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("../../../../resources/com/example/ampify/Login.fxml"));
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("Login.fxml"));
         System.out.println("moved to Main fxml");
         rootPane.getChildren().setAll(pane);
     }
